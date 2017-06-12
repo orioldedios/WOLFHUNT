@@ -1,0 +1,41 @@
+﻿  Main.cpp
+c:\users\loiro\desktop\wolf\game.h(5): error C2512: 'Character': no hay disponible un constructor predeterminado adecuado
+  c:\users\loiro\desktop\wolf\character.h(22): note: vea la declaración de 'Character'
+  Game.cpp
+c:\users\loiro\desktop\wolf\game.h(5): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\loiro\desktop\wolf\game.h(5): error C2146: error de sintaxis: falta ';' delante del identificador 'player'
+c:\users\loiro\desktop\wolf\game.h(20): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\loiro\desktop\wolf\game.h(20): error C2146: error de sintaxis: falta ';' delante del identificador 'putarol'
+c:\users\loiro\desktop\wolf\character.h(27): error C3646: 'rol': especificador de invalidación desconocido
+c:\users\loiro\desktop\wolf\character.h(27): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\loiro\desktop\wolf\character.h(29): error C2061: error de sintaxis: identificador 'ROL'
+c:\users\loiro\desktop\wolf\character.h(34): error C3646: 'getRol': especificador de invalidación desconocido
+c:\users\loiro\desktop\wolf\character.h(34): error C2059: error de sintaxis: '('
+c:\users\loiro\desktop\wolf\character.h(34): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\loiro\desktop\wolf\game.cpp(19): error C2065: 'player': identificador no declarado
+c:\users\loiro\desktop\wolf\game.cpp(19): error C2228: el operando izquierdo de '.rol' debe tener class/struct/union
+c:\users\loiro\desktop\wolf\game.cpp(22): error C2065: 'player': identificador no declarado
+c:\users\loiro\desktop\wolf\game.cpp(22): error C2228: el operando izquierdo de '.rol' debe tener class/struct/union
+c:\users\loiro\desktop\wolf\game.cpp(25): error C2065: 'player': identificador no declarado
+c:\users\loiro\desktop\wolf\game.cpp(25): error C2228: el operando izquierdo de '.rol' debe tener class/struct/union
+c:\users\loiro\desktop\wolf\game.cpp(28): error C2065: 'player': identificador no declarado
+c:\users\loiro\desktop\wolf\game.cpp(28): error C2228: el operando izquierdo de '.rol' debe tener class/struct/union
+c:\users\loiro\desktop\wolf\game.cpp(31): error C2065: 'player': identificador no declarado
+c:\users\loiro\desktop\wolf\game.cpp(31): error C2228: el operando izquierdo de '.rol' debe tener class/struct/union
+c:\users\loiro\desktop\wolf\game.cpp(44): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\loiro\desktop\wolf\game.cpp(44): error C2086: 'int ROL': nueva definición
+  c:\users\loiro\desktop\wolf\game.h(20): note: vea la declaración de 'ROL'
+c:\users\loiro\desktop\wolf\game.cpp(44): error C2146: error de sintaxis: falta ';' delante del identificador 'putarol'
+c:\users\loiro\desktop\wolf\game.cpp(44): error C2143: error de sintaxis: falta ';' delante de '{'
+c:\users\loiro\desktop\wolf\game.cpp(44): error C2447: '{': falta el encabezado de función (¿lista formal de estilo anterior?)
+c:\users\loiro\desktop\wolf\game.cpp(112): error C2065: 'player': identificador no declarado
+c:\users\loiro\desktop\wolf\game.cpp(112): error C2228: el operando izquierdo de '.name' debe tener class/struct/union
+c:\users\loiro\desktop\wolf\game.cpp(113): error C2065: 'player': identificador no declarado
+c:\users\loiro\desktop\wolf\game.cpp(113): error C2228: el operando izquierdo de '.alive' debe tener class/struct/union
+c:\users\loiro\desktop\wolf\game.cpp(114): error C2065: 'player': identificador no declarado
+c:\users\loiro\desktop\wolf\game.cpp(114): error C2228: el operando izquierdo de '.numplayer' debe tener class/struct/union
+c:\users\loiro\desktop\wolf\game.cpp(115): error C2065: 'player': identificador no declarado
+c:\users\loiro\desktop\wolf\game.cpp(115): error C2228: el operando izquierdo de '.rol' debe tener class/struct/union
+c:\users\loiro\desktop\wolf\game.cpp(115): error C3861: 'putarol': no se encontró el identificador
+c:\users\loiro\desktop\wolf\game.cpp(121): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  Generando código...
