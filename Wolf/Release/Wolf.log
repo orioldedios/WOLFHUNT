@@ -1,0 +1,10 @@
+﻿  Character.cpp
+  Game.cpp
+Game.cpp(121): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  Main.cpp
+Game.obj : error LNK2005: ya se definió "int __cdecl getRandome(int)" (?getRandome@@YAHH@Z) en Character.obj
+Main.obj : error LNK2005: ya se definió "int * counters" (?counters@@3PAHA) en Game.obj
+Main.obj : error LNK2005: ya se definió "int numplayers" (?numplayers@@3HA) en Game.obj
+Main.obj : error LNK2005: ya se definió "class Character * player" (?player@@3PAVCharacter@@A) en Game.obj
+Main.obj : error LNK2005: ya se definió "int __cdecl getRandome(int)" (?getRandome@@YAHH@Z) en Character.obj
+C:\Users\loiro\Desktop\WOLFHUNT\Wolf\Release\Wolf.exe : fatal error LNK1169: se encontraron uno o más símbolos definidos simultáneamente

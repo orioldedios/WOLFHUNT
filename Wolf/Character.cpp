@@ -1,12 +1,6 @@
 #include "Character.h"
 
-Character::Character(bool alive, char* name, int numplayer, ROL rol)
-{
-	this->alive = alive;
-	this->name = name;
-	this->numplayer = numplayer;
-	this->rol = rol;
-}
+Character::Character(){}
 
 Character::~Character(){}
 
@@ -22,4 +16,4 @@ bool Character::isAlive() {
 
 char* Character::getName() { return name; }
 int Character::getNumPlayer() { return numplayer; }
-ROL Character::getRol() { return rol; }
+enum ROL Character::getRol() { return rol; }

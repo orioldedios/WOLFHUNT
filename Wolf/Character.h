@@ -1,4 +1,4 @@
-#ifndef _CHARACTER_H
+#ifndef _CHARACTER_H_
 #define _CHARACTER_H_
 
 #include <time.h>
@@ -20,18 +20,17 @@ enum ROL
 
 class  Character
 {
-private:
+public:
 	bool alive = true;
 	char* name = "Player";
 	int numplayer;
-	ROL rol;
-public:
-	 Character(bool alive, char* name, int numplayer, ROL rol);
+	enum ROL rol;
+	 Character();
 	~ Character();
 	bool isAlive();
 	char* getName();
 	int getNumPlayer();
-	ROL getRol();
+	enum ROL getRol();
 
 };
 

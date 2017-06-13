@@ -1,6 +1,8 @@
 #ifndef _GAME_H_
 #define _GAME_H_
 
+#include "Character.h"
+
 int numplayers;
 Character player[15];
 
@@ -17,7 +19,7 @@ int counters[MAX_COUNTERS];
 
 void play();
 
-ROL putarol();
+enum ROL putarol();
 void tellNumPlayers();
 void assignRoles();
 void countRoles();

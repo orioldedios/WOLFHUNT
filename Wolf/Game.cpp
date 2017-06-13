@@ -41,7 +41,7 @@ void resetCounters() { //AL TANTO QUE ESTO LO USARAS ALGUN DIA
 	}
 }
 
-ROL putarol(){
+enum ROL putarol(){
 	countRoles();
 	switch (getRandome(3))
 	{
