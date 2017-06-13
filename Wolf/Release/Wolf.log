@@ -1,10 +1,17 @@
-﻿  Character.cpp
-  Game.cpp
-Game.cpp(121): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-  Main.cpp
-Game.obj : error LNK2005: ya se definió "int __cdecl getRandome(int)" (?getRandome@@YAHH@Z) en Character.obj
-Main.obj : error LNK2005: ya se definió "int * counters" (?counters@@3PAHA) en Game.obj
-Main.obj : error LNK2005: ya se definió "int numplayers" (?numplayers@@3HA) en Game.obj
-Main.obj : error LNK2005: ya se definió "class Character * player" (?player@@3PAVCharacter@@A) en Game.obj
-Main.obj : error LNK2005: ya se definió "int __cdecl getRandome(int)" (?getRandome@@YAHH@Z) en Character.obj
-C:\Users\loiro\Desktop\WOLFHUNT\Wolf\Release\Wolf.exe : fatal error LNK1169: se encontraron uno o más símbolos definidos simultáneamente
+﻿  Game.cpp
+Game.cpp(133): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+Game.obj : warning LNK4006: "int __cdecl getRandome(int)" (?getRandome@@YAHH@Z) ya se definió en Character.obj; segunda definición omitida
+Main.obj : warning LNK4006: "int * counters" (?counters@@3PAHA) ya se definió en Game.obj; segunda definición omitida
+Main.obj : warning LNK4006: "int numplayers" (?numplayers@@3HA) ya se definió en Game.obj; segunda definición omitida
+Main.obj : warning LNK4006: "class Character * player" (?player@@3PAVCharacter@@A) ya se definió en Game.obj; segunda definición omitida
+Main.obj : warning LNK4006: "int __cdecl getRandome(int)" (?getRandome@@YAHH@Z) ya se definió en Character.obj; segunda definición omitida
+C:\Users\loiro\Desktop\WOLFHUNT\Wolf\Release\Wolf.exe : warning LNK4088: la imagen se está generando debido a la opción /FORCE; quizá la imagen no se pueda ejecutar
+  Generando código
+  2 of 25 functions ( 8.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    7 functions had inline decision re-evaluated but remain unchanged
+  Generación de código finalizada
+* CIL library *(* CIL module *) : warning LNK4006: "class Character * player" (?player@@3PAVCharacter@@A) ya se definió en * CIL library *(* CIL module *); segunda definición omitida
+C:\Users\loiro\Desktop\WOLFHUNT\Wolf\Release\Wolf.exe : warning LNK4088: la imagen se está generando debido a la opción /FORCE; quizá la imagen no se pueda ejecutar
+  Wolf.vcxproj -> C:\Users\loiro\Desktop\WOLFHUNT\Wolf\Release\Wolf.exe
+  Wolf.vcxproj -> C:\Users\loiro\Desktop\WOLFHUNT\Wolf\Release\Wolf.pdb (Full PDB)

@@ -1,16 +1,23 @@
 #include "Game.h"
 #include "Character.h"
 
-#define CLEAR system("clr")
+#define CLEAR system("cls");
 
 using namespace std;
 
 #include <iostream>
 
 void tellNumPlayers(){
-	cout << "How many players do you want? ";
-	cin >> numplayers;
-	CLEAR;
+	do {
+		cout << "How many players do you want? ";
+		cin >> numplayers;
+		CLEAR;
+		if (numplayers > 15) {
+			cout << "Sorry, 15 are max players" << endl;
+			system("pause");
+			CLEAR;
+		}
+	} while (numplayers > 15);
 }
 
 void countRoles() {
@@ -50,13 +57,13 @@ enum ROL putarol(){
 		if (counters[wolfcounter] <= (numplayers / 3)) {
 			return WOLF;
 		}
-		else if (counters[devinercounter] != 1) {
+		else if (counters[devinercounter] == 0) {
 			return DEVINER;
 		}
-		else if (counters[girlcounter] != 1) {
+		else if (counters[girlcounter] == 0) {
 			return GIRL;
 		}
-		else if (counters[huntercounter] != 1) {
+		else if (counters[huntercounter] == 0) {
 			return HUNTER;
 		}
 		else {
@@ -65,13 +72,13 @@ enum ROL putarol(){
 		break;
 
 	case 2://SPECIAL
-		if (counters[devinercounter] != 1) {
+		if (counters[devinercounter] == 0) {
 			return DEVINER;
 		}
-		else if (counters[girlcounter] != 1) {
+		else if (counters[girlcounter] == 0) {
 			return GIRL;
 		}
-		else if (counters[huntercounter] != 1) {
+		else if (counters[huntercounter] == 0) {
 			return HUNTER;
 		}
 		else if (counters[wolfcounter] <= (numplayers / 3)) {
@@ -88,13 +95,13 @@ enum ROL putarol(){
 		}else if (counters[wolfcounter] <= (numplayers / 3)) {
 			return WOLF;
 		}
-		else if (counters[devinercounter] != 1) {
+		else if (counters[devinercounter] == 0) {
 			return DEVINER;
 		}
-		else if (counters[girlcounter] != 1) {
+		else if (counters[girlcounter] == 0) {
 			return GIRL;
 		}
-		else if (counters[huntercounter] != 1) {
+		else if (counters[huntercounter] == 0) {
 			return HUNTER;
 		}
 		else {
@@ -104,14 +111,19 @@ enum ROL putarol(){
 	default:
 		break;
 	}
+	resetCounters();
 }
 
 void assignRoles() {
 	for (int i = 0; i < numplayers; i++)
 	{
+		player[i].rol = MAX_ROLE;
+	}
+	for (int i = 0; i < numplayers; i++)
+	{
 		player[i].name = "Player 1";//areglar
 		player[i].alive = true;
-		player[i].numplayer = 1;
+		player[i].numplayer = i;
 		player[i].rol = putarol();
 	}
 }
@@ -123,6 +135,10 @@ void play() {
 	tellNumPlayers();
 	assignRoles();
 
+	for (int i = 0; i < numplayers; i++)
+	{
+		cout << player[i].rol<<endl;
+	}
 
 	resetCounters();//AL FINAL DE TODO RESETEAS LOS CONTADORES PA QUE NO DE ERROR Y PUEDAS VOLVER A JUGAR
 }
